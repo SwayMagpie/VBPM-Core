@@ -82,7 +82,7 @@ python prototype/baby_personality.py
 ---
 
 #### 🧪 Try It
-You can modify value weights or scenario scores in `prototype/baby_personality.py`
+You can modify value weights or scenario scores in `prototype/values.json`, `prototype/scenarios.json`
 to observe how the decision function changes.
 
 This prototype is intentionally minimal and designed for experimentation.
