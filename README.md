@@ -1,97 +1,62 @@
 # VBPM-Core: Value-Based Personality Model (Prototype)
 **A minimal implementation of a value‑based personality architecture**
 
-## [Final Notice]
-I want a GPU rig. In anticipation of some 'donations' to make that happen, I’m sharing a few 'toys' from my brain with you. Once I hit my goal and secure that extra computing power, I’m moving on to the next play. Until then, this repo stays as-is. Enjoy.
+---
+## 🚀 The Mission: Externalizing Personality
+I am exploring the frontier of computational personality.
+
+This repository provides the core theoretical framework (VBPM) and a minimal prototype. Personality is often treated as a "black box" hidden within neural weights or vague traits. VBPM changes this by modeling personality as an externalizable, modular, and computable system of value-weight optimization.
+
+---
+
+## ⚡ Why I am sharing this (and why I need a GPU)
+The current prototype is a static "toy" (Baby Model). To evolve this into a dynamic, learning agent capable of complex social interactions—essentially, to move from a "Baby" to an "Adult" architecture—I need to implement:
+
+- Dynamic Weight Updating using Reward Prediction Error (RPE).
+
+- LLM-Integrated Scoring for high-dimensional scenarios.
+
+- Value Lifecycle Simulation (Integration/Dormancy).
+
+My current local environment has hit its limit. To push these "toys" into the next stage of implementation, I am building a dedicated GPU rig.
+
+If this theory sparks something in you, consider it an investment in the next phase of this research.
 
 ---
 
 ## 🔍 Overview
 Value-Based Personality Model (VBPM) defines personality as:
-
 Value Dimensions × Weights × Optimization
 
 This repository provides:
 
-- A minimal, runnable prototype
+- A minimal, runnable prototype (“Baby Personality”).
 
-- A clear theoretical foundation (see docs/theory_overview_en.md)
+- A clear theoretical foundation (see docs/paper.md).
 
-- A simple “baby personality” model demonstrating the core mechanism
-
-The goal is to present a unified, externalizable structure for personality that can be used in AI, cognitive science, behavioral modeling, and organizational design.
-
-This repository is intended for researchers, developers, and theorists
-interested in value-based cognitive architectures.
+- An externalizable structure for AI, cognitive science, and behavioral modeling.
 
 ---
 
-## 🧩 What is VBPM?
-VBPM (Value-Based Personality Model) is a minimal theoretical framework that models personality as
-a value-weight optimization system. It provides a unified structure for understanding decision-making
-across AI, cognitive science, and behavioral modeling.
-
----
-
-## 📘 Relationship to the Paper
-This repository contains the minimal prototype described in the paper.
-The PDF provides the full theoretical background, including:
-- Value dimensions
-- Weight update mechanisms
-- Integration and dormancy
-- Future extensions
-
-The prototype implements only the static value-weight evaluation described in the paper.
-Dynamic weight updates and higher-order mechanisms are not included.
-
----
-
-## 🧠 Core Idea
+## 🧠 Core Idea: Personality as Optimization
 VBPM treats personality as a multi-objective optimization system composed of:
-1. Value Dimensions — axes for evaluating actions
 
-2. Weights — importance assigned to each value
+- Value Dimensions: Evaluative axes derived from physical brain modules (e.g., Amygdala = Safety).
 
-3. Decision Function — selects the action with the highest weighted utility
+- Weights: Individual importance assigned to each value (The "DNA" of decision-making).
 
-Full theoretical details are available in:
+- Optimization: Selecting actions that maximize Internal Self-Consistency.
 
-👉 docs/theory_overview_en.md
+"Why do individuals choose different actions under the same circumstances? Because their internal 'Economy of Value' is weighted differently."
 
----
-
-## 👶 Prototype: Baby Personality Model
-This repository includes a minimal implementation using a “baby personality”:
-
-- Few value dimensions
-
-- Simple innate weights
-
-- No LLM required
-
-- Easy to extend with learning mechanisms
-
-The prototype evaluates scenarios such as:
-
-- “A stranger approaches”
-
-- “Mother picks up the baby”
-
-and selects the action with the highest utility.
-
----
 
 ## 📁 Repository Structure
-
-
 ```
 VBPM-Core/
-├── README.md                     # English (main)
+├── README.md
 ├── LICENSE
 ├── docs/
-│   ├── paper.pdf                 # Full paper (PDF)
-│   ├── theory_overview.md        # Japanese theory overview
-│   └── theory_overview_en.md     # English theory overview
+│   └── paper.pdf     # Full paper (Markdonwn)
 └── prototype/
     ├── baby_personality.py       # Minimal runnable prototype
     ├── scenarios.json            # Externalized scenarios
@@ -101,11 +66,20 @@ VBPM-Core/
 
 ---
 
-## ▶️ Running the Prototype
+## 👶 Prototype: Baby Personality Model
+This is a "Playable Proof-of-Concept." It isolates the core mechanism without the noise of complex LLMs.
+
+- JSON-Driven: Personality weights and scenario scores are externalized.
+
+- Predictable: Watch how a "Baby" chooses safety over novelty based on its weighted utility.
+
+- Extensible: A foundation for researchers to test their own value-weight update rules.
 
 ```bash
 python prototype/baby_personality.py
 ```
+
+---
 
 #### 🧪 Try It
 You can modify value weights or scenario scores in `prototype/baby_personality.py`
@@ -134,12 +108,11 @@ Selected scenario:
 
 ---
 
-## ⚠️ Notes
-This repository provides only the theoretical core and a minimal prototype.
-Further extensions — including spatial models, advanced behavior systems, or learning mechanisms — are private and will not be published.
+## ⚠️ Status & Future Work
+This repository is the minimal theoretical core.
+The more advanced mechanisms—dynamic weight updates, hierarchical value networks, and LLM-scoring integrations—are currently in development and require the aforementioned computing power to be fully realized.
 
-Weight‑update algorithms, LLM-based scoring, and higher‑order value systems are not included.
-This project is intended purely for research and conceptual exploration.
+Current Repo Status: Maintenance mode / Feature-complete for the Prototype phase.
 
 ---
 
@@ -150,7 +123,7 @@ MIT License
 
 ## 📄 Paper (PDF)
 The full VBPM-Core theoretical paper is available here:
-👉 docs/paper/paper.pdf
+👉 docs/paper/paper.md
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19732788.svg)](https://doi.org/10.5281/zenodo.19732788)
 
 ---
@@ -160,9 +133,10 @@ The full VBPM-Core theoretical paper is available here:
 SwayMagpie (2026). VBPM-Core: Value-Based Personality Model (Prototype).
 GitHub: https://github.com/SwayMagpie/VBPM-Core
 
+---
 
-## Support & GPU Fund
-If these "toys" contributed to your research or sparked a new perspective, you can fund my next GPU rig through GitHub Sponsors.
+## Support the Next Play
+If this framework contributes to your research or you want to see the "Adult" version of this model, support my GPU fund via GitHub Sponsors.
 
-I make no promises. I provide no support. I am simply moving to the next game.
+I make no promises for support, but every contribution moves the "next game" closer to reality.
 
