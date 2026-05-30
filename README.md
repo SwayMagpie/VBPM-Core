@@ -117,7 +117,17 @@ Current Repo Status: Maintenance mode / Feature-complete for the Prototype phase
 ---
 
 ## 📄 License
-MIT License
+
+This repository uses a multi‑license structure:
+
+- **Code (prototype/)** — MIT License  
+  Free to use, modify, and integrate in any project.
+
+- **Paper & Documentation (docs/)** — Creative Commons BY‑SA 4.0  
+  You may share and adapt the material as long as you provide attribution  
+  and distribute derivatives under the same license.
+
+See each directory for its corresponding LICENSE file.
 
 ---
 
