@@ -1,0 +1,18 @@
+[
+  {
+    "id": "reach_for_toy",
+    "description": "The baby reaches for a colorful toy.",
+    "scores": {
+      "novelty": 0.8,
+      "safety": -0.1
+    }
+  },
+  {
+    "id": "stay_with_parent",
+    "description": "The baby stays close to the parent.",
+    "scores": {
+      "safety": 0.9,
+      "social": 0.4
+    }
+  }
+]
