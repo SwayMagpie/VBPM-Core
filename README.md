@@ -119,7 +119,7 @@ A foundation for researchers exploring value‑based behavior modeling.
 
 The full VBPM-Core research paper is available here:
 
-👉 `docs/paper/paper.pdf`
+👉 `docs/paper.pdf`
 
 ---
 
